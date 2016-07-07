@@ -55,40 +55,61 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameOptions\GameOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameOptions\GameOptions.Designer.cs">
+      <DependentUpon>GameOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\OnePlayer\OnePlayerGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\OnePlayer\OnePlayerGame.Designer.cs">
+      <DependentUpon>OnePlayerGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\TwoPlayers\TwoPlayersGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\TwoPlayers\TwoPlayersGame.Designer.cs">
+      <DependentUpon>TwoPlayersGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu\MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menu\MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu\MenúPrincipal.cs">
+    <Compile Include="PlayersNames\NewPlayerName.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu\MenúPrincipal.Designer.cs">
-      <DependentUpon>MenúPrincipal.cs</DependentUpon>
+    <Compile Include="PlayersNames\NewPlayerName.Designer.cs">
+      <DependentUpon>NewPlayerName.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GameOptions\GameOptions.resx">
+      <DependentUpon>GameOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\OnePlayer\OnePlayerGame.resx">
+      <DependentUpon>OnePlayerGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\TwoPlayers\TwoPlayersGame.resx">
+      <DependentUpon>TwoPlayersGame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu\MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu\MenúPrincipal.resx">
-      <DependentUpon>MenúPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="PlayersNames\NewPlayerName.resx">
+      <DependentUpon>NewPlayerName.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -98,18 +119,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <None Include="Graphics\Icon\playButton.png" />
-    <None Include="Graphics\Icon\ScoreIcon.png" />
-    <Content Include="Graphics\Icon\Tic-Tac-Toe-Game-grey.ico" />
-    <None Include="Graphics\Icon\video-play-3-512.gif" />
-    <None Include="Graphics\Icon\Tic-Tac-Toe-Game-red.png" />
-    <None Include="Graphics\Icon\Tutorial.png" />
-    <Content Include="Graphics\ImageIcon\tic-tac-toe-150614.png" />
-    <Content Include="Graphics\ImageIcon\tic-tac-toe.png" />
-    <Content Include="Graphics\Wallpaper\simple-brown-texture_328805.jpg" />
-    <Content Include="Graphics\Wallpaper\wood-02.jpg" />
+    <Folder Include="Graphics\Wallpaper\" />
+    <Folder Include="Tutorial\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Graphics\GameImages\FondoJuego1.png" />
+    <Content Include="Graphics\GameImages\FondoJuego2.png" />
+    <Content Include="Graphics\Icon\Tic Tac Toe Black Icon.ico" />
+    <Content Include="Graphics\Icon\Tic Tac Toe Red Icon.png" />
+    <Content Include="Graphics\ImageIcon\ImageReference.png" />
+    <Content Include="Graphics\MainMenu\playButton.png" />
+    <Content Include="Graphics\MainMenu\ScoreIcon.png" />
+    <Content Include="Graphics\MainMenu\Tutorial.png" />
+    <Content Include="Graphics\SelectMode\2 players game.png" />
     <Content Include="Tic-Tac-Toe-Game-grey.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

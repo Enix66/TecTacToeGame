@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TicTacToeGame.Menu
+namespace TicTacToeGame.Game
 {
-    public partial class MenuPrincipal : Form
+    public partial class OnePlayerGame : Form
     {
-        public MenuPrincipal()
+        public OnePlayerGame()
         {
             InitializeComponent();
         }

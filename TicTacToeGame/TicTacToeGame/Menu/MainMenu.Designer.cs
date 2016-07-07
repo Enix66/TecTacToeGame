@@ -29,153 +29,80 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
-            this.Nombre = new System.Windows.Forms.Label();
-            this.FondoNombre1 = new System.Windows.Forms.Label();
-            this.FondoNombre2 = new System.Windows.Forms.Label();
-            this.Titulo = new System.Windows.Forms.Label();
-            this.FondoTitulo1 = new System.Windows.Forms.Label();
-            this.FondoTitulo2 = new System.Windows.Forms.Label();
-            this.Tutorial = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Score = new System.Windows.Forms.Button();
-            this.BotonPlay = new System.Windows.Forms.Button();
+            this.Name = new System.Windows.Forms.Label();
+            this.Name2 = new System.Windows.Forms.Label();
+            this.Title = new System.Windows.Forms.Label();
+            this.Title1 = new System.Windows.Forms.Label();
+            this.Title2 = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Button();
-            this.Versión = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Version = new System.Windows.Forms.Label();
+            this.ButtonTutorial = new System.Windows.Forms.Button();
+            this.ReferenceImage = new System.Windows.Forms.PictureBox();
+            this.ButtonScore = new System.Windows.Forms.Button();
+            this.ButtonPlay = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.ReferenceImage)).BeginInit();
             this.SuspendLayout();
             // 
-            // Nombre
+            // Name
             // 
-            this.Nombre.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.Nombre.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.Nombre.Font = new System.Drawing.Font("Rockwell", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Nombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Nombre.Location = new System.Drawing.Point(422, 364);
-            this.Nombre.Name = "Nombre";
-            this.Nombre.Size = new System.Drawing.Size(348, 58);
-            this.Nombre.TabIndex = 1019;
-            this.Nombre.Text = "By: Jafet Obregón Rodríguez";
-            this.Nombre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Name.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.Name.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Name.Font = new System.Drawing.Font("Rockwell", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Name.Location = new System.Drawing.Point(513, 386);
+            this.Name.Name = "Name";
+            this.Name.Size = new System.Drawing.Size(275, 41);
+            this.Name.TabIndex = 1019;
+            this.Name.Text = "By: Jafet Obregón R";
+            this.Name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // FondoNombre1
+            // Name2
             // 
-            this.FondoNombre1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.FondoNombre1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.FondoNombre1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.FondoNombre1.Location = new System.Drawing.Point(417, 364);
-            this.FondoNombre1.Name = "FondoNombre1";
-            this.FondoNombre1.Size = new System.Drawing.Size(367, 58);
-            this.FondoNombre1.TabIndex = 1018;
+            this.Name2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Name2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Name2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Name2.Location = new System.Drawing.Point(-4, 381);
+            this.Name2.Name = "Name2";
+            this.Name2.Size = new System.Drawing.Size(792, 83);
+            this.Name2.TabIndex = 1017;
             // 
-            // FondoNombre2
+            // Title
             // 
-            this.FondoNombre2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.FondoNombre2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.FondoNombre2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.FondoNombre2.Location = new System.Drawing.Point(-4, 381);
-            this.FondoNombre2.Name = "FondoNombre2";
-            this.FondoNombre2.Size = new System.Drawing.Size(792, 83);
-            this.FondoNombre2.TabIndex = 1017;
+            this.Title.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.Title.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Title.Font = new System.Drawing.Font("Rockwell", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Title.Location = new System.Drawing.Point(10, 34);
+            this.Title.Name = "Title";
+            this.Title.Size = new System.Drawing.Size(314, 66);
+            this.Title.TabIndex = 1016;
+            this.Title.Text = "Tic Tac Toe";
+            this.Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Titulo
+            // Title1
             // 
-            this.Titulo.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.Titulo.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.Titulo.Font = new System.Drawing.Font("Rockwell", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Titulo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Titulo.Location = new System.Drawing.Point(10, 34);
-            this.Titulo.Name = "Titulo";
-            this.Titulo.Size = new System.Drawing.Size(314, 66);
-            this.Titulo.TabIndex = 1016;
-            this.Titulo.Text = "Tic Tac Toe";
-            this.Titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Title1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.Title1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Title1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Title1.Location = new System.Drawing.Point(-4, 34);
+            this.Title1.Name = "Title1";
+            this.Title1.Size = new System.Drawing.Size(342, 66);
+            this.Title1.TabIndex = 1015;
             // 
-            // FondoTitulo1
+            // Title2
             // 
-            this.FondoTitulo1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.FondoTitulo1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.FondoTitulo1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.FondoTitulo1.Location = new System.Drawing.Point(-4, 34);
-            this.FondoTitulo1.Name = "FondoTitulo1";
-            this.FondoTitulo1.Size = new System.Drawing.Size(342, 66);
-            this.FondoTitulo1.TabIndex = 1015;
-            // 
-            // FondoTitulo2
-            // 
-            this.FondoTitulo2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.FondoTitulo2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.FondoTitulo2.Location = new System.Drawing.Point(-4, -2);
-            this.FondoTitulo2.Name = "FondoTitulo2";
-            this.FondoTitulo2.Size = new System.Drawing.Size(792, 83);
-            this.FondoTitulo2.TabIndex = 1014;
-            // 
-            // Tutorial
-            // 
-            this.Tutorial.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Tutorial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tutorial.FlatAppearance.BorderSize = 0;
-            this.Tutorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Tutorial.Font = new System.Drawing.Font("Franklin Gothic Demi", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tutorial.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Tutorial.Image = global::TicTacToeGame.Properties.Resources.Tutorial2;
-            this.Tutorial.Location = new System.Drawing.Point(-1, 119);
-            this.Tutorial.Name = "Tutorial";
-            this.Tutorial.Size = new System.Drawing.Size(247, 53);
-            this.Tutorial.TabIndex = 1022;
-            this.Tutorial.Text = "Tutorial";
-            this.Tutorial.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.Tutorial.UseVisualStyleBackColor = false;
-            this.Tutorial.Click += new System.EventHandler(this.Tutorial_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(18, 225);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(149, 138);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1021;
-            this.pictureBox1.TabStop = false;
-            // 
-            // Score
-            // 
-            this.Score.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Score.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Score.FlatAppearance.BorderSize = 0;
-            this.Score.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Score.Font = new System.Drawing.Font("Franklin Gothic Demi", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Score.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Score.Image = global::TicTacToeGame.Properties.Resources.ScoreIcon;
-            this.Score.Location = new System.Drawing.Point(541, 242);
-            this.Score.Name = "Score";
-            this.Score.Size = new System.Drawing.Size(247, 53);
-            this.Score.TabIndex = 1020;
-            this.Score.Text = "Score";
-            this.Score.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.Score.UseVisualStyleBackColor = false;
-            // 
-            // BotonPlay
-            // 
-            this.BotonPlay.BackColor = System.Drawing.Color.OrangeRed;
-            this.BotonPlay.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BotonPlay.FlatAppearance.BorderSize = 0;
-            this.BotonPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BotonPlay.Font = new System.Drawing.Font("Franklin Gothic Demi", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotonPlay.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BotonPlay.Image = global::TicTacToeGame.Properties.Resources.playButton;
-            this.BotonPlay.Location = new System.Drawing.Point(490, 136);
-            this.BotonPlay.Name = "BotonPlay";
-            this.BotonPlay.Size = new System.Drawing.Size(298, 85);
-            this.BotonPlay.TabIndex = 1013;
-            this.BotonPlay.Text = "Play";
-            this.BotonPlay.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.BotonPlay.UseVisualStyleBackColor = false;
+            this.Title2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Title2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Title2.Location = new System.Drawing.Point(-4, -2);
+            this.Title2.Name = "Title2";
+            this.Title2.Size = new System.Drawing.Size(792, 83);
+            this.Title2.TabIndex = 1014;
             // 
             // ExitButton
             // 
             this.ExitButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.ExitButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.ExitButton.FlatAppearance.BorderSize = 0;
             this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitButton.Font = new System.Drawing.Font("Franklin Gothic Demi", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -188,60 +115,128 @@
             this.ExitButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ExitButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.ExitButton.UseVisualStyleBackColor = false;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
-            // Versión
+            // Version
             // 
-            this.Versión.BackColor = System.Drawing.Color.DodgerBlue;
-            this.Versión.Font = new System.Drawing.Font("Rockwell", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Versión.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Versión.Location = new System.Drawing.Point(647, 422);
-            this.Versión.Name = "Versión";
-            this.Versión.Size = new System.Drawing.Size(137, 42);
-            this.Versión.TabIndex = 1023;
-            this.Versión.Text = "v. 0.0.1";
-            this.Versión.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Versión.UseWaitCursor = true;
+            this.Version.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Version.Font = new System.Drawing.Font("Rockwell", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Version.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Version.Location = new System.Drawing.Point(647, 427);
+            this.Version.Name = "Version";
+            this.Version.Size = new System.Drawing.Size(137, 37);
+            this.Version.TabIndex = 1023;
+            this.Version.Text = "v. 0.0.1";
+            this.Version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Version.UseWaitCursor = true;
+            // 
+            // ButtonTutorial
+            // 
+            this.ButtonTutorial.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ButtonTutorial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonTutorial.FlatAppearance.BorderSize = 0;
+            this.ButtonTutorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonTutorial.Font = new System.Drawing.Font("Franklin Gothic Demi", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonTutorial.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ButtonTutorial.Image = ((System.Drawing.Image)(resources.GetObject("ButtonTutorial.Image")));
+            this.ButtonTutorial.Location = new System.Drawing.Point(541, 112);
+            this.ButtonTutorial.Name = "ButtonTutorial";
+            this.ButtonTutorial.Size = new System.Drawing.Size(247, 53);
+            this.ButtonTutorial.TabIndex = 1022;
+            this.ButtonTutorial.Text = "Tutorial";
+            this.ButtonTutorial.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.ButtonTutorial.UseVisualStyleBackColor = false;
+            this.ButtonTutorial.Click += new System.EventHandler(this.ButtonTutorial_Click);
+            // 
+            // ReferenceImage
+            // 
+            this.ReferenceImage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ReferenceImage.Image = ((System.Drawing.Image)(resources.GetObject("ReferenceImage.Image")));
+            this.ReferenceImage.Location = new System.Drawing.Point(12, 124);
+            this.ReferenceImage.Name = "ReferenceImage";
+            this.ReferenceImage.Size = new System.Drawing.Size(244, 233);
+            this.ReferenceImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ReferenceImage.TabIndex = 1021;
+            this.ReferenceImage.TabStop = false;
+            this.ReferenceImage.Click += new System.EventHandler(this.ReferenceImage_Click);
+            // 
+            // ButtonScore
+            // 
+            this.ButtonScore.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ButtonScore.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonScore.FlatAppearance.BorderSize = 0;
+            this.ButtonScore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonScore.Font = new System.Drawing.Font("Franklin Gothic Demi", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonScore.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ButtonScore.Image = ((System.Drawing.Image)(resources.GetObject("ButtonScore.Image")));
+            this.ButtonScore.Location = new System.Drawing.Point(541, 288);
+            this.ButtonScore.Name = "ButtonScore";
+            this.ButtonScore.Size = new System.Drawing.Size(247, 53);
+            this.ButtonScore.TabIndex = 1020;
+            this.ButtonScore.Text = "Score";
+            this.ButtonScore.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.ButtonScore.UseVisualStyleBackColor = false;
+            // 
+            // ButtonPlay
+            // 
+            this.ButtonPlay.BackColor = System.Drawing.Color.OrangeRed;
+            this.ButtonPlay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonPlay.FlatAppearance.BorderSize = 0;
+            this.ButtonPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonPlay.Font = new System.Drawing.Font("Franklin Gothic Demi", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonPlay.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ButtonPlay.Image = ((System.Drawing.Image)(resources.GetObject("ButtonPlay.Image")));
+            this.ButtonPlay.Location = new System.Drawing.Point(490, 184);
+            this.ButtonPlay.Name = "ButtonPlay";
+            this.ButtonPlay.Size = new System.Drawing.Size(298, 85);
+            this.ButtonPlay.TabIndex = 1013;
+            this.ButtonPlay.Text = "Play";
+            this.ButtonPlay.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.ButtonPlay.UseVisualStyleBackColor = false;
+            this.ButtonPlay.Click += new System.EventHandler(this.ButtonPlay_Click);
             // 
             // MainMenu
             // 
+            this.AcceptButton = this.ButtonPlay;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CancelButton = this.ExitButton;
             this.ClientSize = new System.Drawing.Size(784, 462);
+            this.Controls.Add(this.Name);
             this.Controls.Add(this.ExitButton);
-            this.Controls.Add(this.Versión);
-            this.Controls.Add(this.Tutorial);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.Score);
-            this.Controls.Add(this.BotonPlay);
-            this.Controls.Add(this.Nombre);
-            this.Controls.Add(this.FondoNombre1);
-            this.Controls.Add(this.FondoNombre2);
-            this.Controls.Add(this.Titulo);
-            this.Controls.Add(this.FondoTitulo1);
-            this.Controls.Add(this.FondoTitulo2);
+            this.Controls.Add(this.Version);
+            this.Controls.Add(this.ButtonTutorial);
+            this.Controls.Add(this.ReferenceImage);
+            this.Controls.Add(this.ButtonScore);
+            this.Controls.Add(this.ButtonPlay);
+            this.Controls.Add(this.Name2);
+            this.Controls.Add(this.Title);
+            this.Controls.Add(this.Title1);
+            this.Controls.Add(this.Title2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "MainMenu";
+            this.MaximizeBox = false;
+       //     this.Name = "MainMenu"; 
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Menu";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ReferenceImage)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button Score;
-        private System.Windows.Forms.Button BotonPlay;
-        private System.Windows.Forms.Label Nombre;
-        private System.Windows.Forms.Label FondoNombre1;
-        private System.Windows.Forms.Label FondoNombre2;
-        private System.Windows.Forms.Label Titulo;
-        private System.Windows.Forms.Label FondoTitulo1;
-        private System.Windows.Forms.Label FondoTitulo2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button Tutorial;
+        private System.Windows.Forms.Button ButtonScore;
+        private System.Windows.Forms.Button ButtonPlay;
+        private System.Windows.Forms.Label Name;
+        private System.Windows.Forms.Label Name2;
+        private System.Windows.Forms.Label Title;
+        private System.Windows.Forms.Label Title1;
+        private System.Windows.Forms.Label Title2;
+        private System.Windows.Forms.Button ButtonTutorial;
         private System.Windows.Forms.Button ExitButton;
-        private System.Windows.Forms.Label Versión;
+        private System.Windows.Forms.Label Version;
+        private System.Windows.Forms.PictureBox ReferenceImage;
     }
 }
