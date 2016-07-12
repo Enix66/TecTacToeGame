@@ -40,6 +40,8 @@
             this.TitleWriteNames = new System.Windows.Forms.Label();
             this.HomeButton = new System.Windows.Forms.Button();
             this.ButtonPlay = new System.Windows.Forms.Button();
+            this.IconPlayer1 = new System.Windows.Forms.Label();
+            this.IconPlayer2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ChangeNameBackGround
@@ -84,21 +86,25 @@
             // 
             this.TextBoxPlayer1.Font = new System.Drawing.Font("Rockwell", 15F, System.Drawing.FontStyle.Bold);
             this.TextBoxPlayer1.Location = new System.Drawing.Point(500, 30);
+            this.TextBoxPlayer1.MaxLength = 10;
             this.TextBoxPlayer1.Multiline = true;
             this.TextBoxPlayer1.Name = "TextBoxPlayer1";
-            this.TextBoxPlayer1.Size = new System.Drawing.Size(240, 35);
+            this.TextBoxPlayer1.Size = new System.Drawing.Size(174, 35);
             this.TextBoxPlayer1.TabIndex = 1020;
             this.TextBoxPlayer1.Text = "Player 1";
+            this.TextBoxPlayer1.TextChanged += new System.EventHandler(this.TextBoxPlayer1_TextChanged);
             // 
             // TextBoxPlayer2
             // 
             this.TextBoxPlayer2.Font = new System.Drawing.Font("Rockwell", 15F, System.Drawing.FontStyle.Bold);
             this.TextBoxPlayer2.Location = new System.Drawing.Point(500, 130);
+            this.TextBoxPlayer2.MaxLength = 10;
             this.TextBoxPlayer2.Multiline = true;
             this.TextBoxPlayer2.Name = "TextBoxPlayer2";
-            this.TextBoxPlayer2.Size = new System.Drawing.Size(240, 35);
+            this.TextBoxPlayer2.Size = new System.Drawing.Size(174, 35);
             this.TextBoxPlayer2.TabIndex = 1021;
             this.TextBoxPlayer2.Text = "Player 2";
+            this.TextBoxPlayer2.TextChanged += new System.EventHandler(this.TextBoxPlayer2_TextChanged);
             // 
             // label4
             // 
@@ -121,11 +127,12 @@
             this.SelectPlayer.Items.AddRange(new object[] {
             "Player 1",
             "Player 2"});
-            this.SelectPlayer.Location = new System.Drawing.Point(500, 235);
+            this.SelectPlayer.Location = new System.Drawing.Point(500, 224);
             this.SelectPlayer.Name = "SelectPlayer";
             this.SelectPlayer.Size = new System.Drawing.Size(254, 32);
             this.SelectPlayer.TabIndex = 1023;
             this.SelectPlayer.Text = "Select";
+            this.SelectPlayer.SelectedIndexChanged += new System.EventHandler(this.SelectPlayer_SelectedIndexChanged);
             this.SelectPlayer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SelectPlayer_KeyPress);
             // 
             // TitleFirstPlayer
@@ -190,6 +197,32 @@
             this.ButtonPlay.UseVisualStyleBackColor = false;
             this.ButtonPlay.Click += new System.EventHandler(this.ButtonPlay_Click);
             // 
+            // IconPlayer1
+            // 
+            this.IconPlayer1.BackColor = System.Drawing.Color.OrangeRed;
+            this.IconPlayer1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.IconPlayer1.Font = new System.Drawing.Font("Bradley Hand ITC", 45F, System.Drawing.FontStyle.Bold);
+            this.IconPlayer1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.IconPlayer1.Location = new System.Drawing.Point(680, 11);
+            this.IconPlayer1.Name = "IconPlayer1";
+            this.IconPlayer1.Size = new System.Drawing.Size(92, 56);
+            this.IconPlayer1.TabIndex = 1029;
+            this.IconPlayer1.Text = "X";
+            this.IconPlayer1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // IconPlayer2
+            // 
+            this.IconPlayer2.BackColor = System.Drawing.Color.OrangeRed;
+            this.IconPlayer2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.IconPlayer2.Font = new System.Drawing.Font("Bradley Hand ITC", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IconPlayer2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.IconPlayer2.Location = new System.Drawing.Point(680, 110);
+            this.IconPlayer2.Name = "IconPlayer2";
+            this.IconPlayer2.Size = new System.Drawing.Size(92, 56);
+            this.IconPlayer2.TabIndex = 1030;
+            this.IconPlayer2.Text = "O";
+            this.IconPlayer2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // NewPlayerName
             // 
             this.AcceptButton = this.ButtonPlay;
@@ -199,6 +232,8 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CancelButton = this.HomeButton;
             this.ClientSize = new System.Drawing.Size(784, 462);
+            this.Controls.Add(this.IconPlayer2);
+            this.Controls.Add(this.IconPlayer1);
             this.Controls.Add(this.ButtonPlay);
             this.Controls.Add(this.HomeButton);
             this.Controls.Add(this.TitleWriteNames);
@@ -232,5 +267,7 @@
         private System.Windows.Forms.Label TitleFirstPlayer;
         private System.Windows.Forms.Button HomeButton;
         private System.Windows.Forms.Button ButtonPlay;
+        private System.Windows.Forms.Label IconPlayer1;
+        private System.Windows.Forms.Label IconPlayer2;
     }
 }

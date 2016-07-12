@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
-            this.Name = new System.Windows.Forms.Label();
+            this.NameJafet = new System.Windows.Forms.Label();
             this.Name2 = new System.Windows.Forms.Label();
             this.Title = new System.Windows.Forms.Label();
             this.Title1 = new System.Windows.Forms.Label();
@@ -43,18 +43,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.ReferenceImage)).BeginInit();
             this.SuspendLayout();
             // 
-            // Name
+            // NameJafet
             // 
-            this.Name.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.Name.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.Name.Font = new System.Drawing.Font("Rockwell", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Name.Location = new System.Drawing.Point(513, 386);
-            this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(275, 41);
-            this.Name.TabIndex = 1019;
-            this.Name.Text = "By: Jafet Obregón R";
-            this.Name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NameJafet.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.NameJafet.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.NameJafet.Font = new System.Drawing.Font("Rockwell", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameJafet.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.NameJafet.Location = new System.Drawing.Point(513, 386);
+            this.NameJafet.Name = "NameJafet";
+            this.NameJafet.Size = new System.Drawing.Size(275, 41);
+            this.NameJafet.TabIndex = 1019;
+            this.NameJafet.Text = "By: Jafet Obregón R";
+            this.NameJafet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Name2
             // 
@@ -204,7 +204,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CancelButton = this.ExitButton;
             this.ClientSize = new System.Drawing.Size(784, 462);
-            this.Controls.Add(this.Name);
+            this.Controls.Add(this.NameJafet);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.Version);
             this.Controls.Add(this.ButtonTutorial);
@@ -217,7 +217,7 @@
             this.Controls.Add(this.Title2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-       //     this.Name = "MainMenu"; 
+            this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Menu";
             ((System.ComponentModel.ISupportInitialize)(this.ReferenceImage)).EndInit();
@@ -229,7 +229,7 @@
 
         private System.Windows.Forms.Button ButtonScore;
         private System.Windows.Forms.Button ButtonPlay;
-        private System.Windows.Forms.Label Name;
+        private System.Windows.Forms.Label NameJafet;
         private System.Windows.Forms.Label Name2;
         private System.Windows.Forms.Label Title;
         private System.Windows.Forms.Label Title1;

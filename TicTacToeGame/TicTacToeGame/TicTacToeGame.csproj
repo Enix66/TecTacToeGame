@@ -61,6 +61,7 @@
     <Compile Include="GameOptions\GameOptions.Designer.cs">
       <DependentUpon>GameOptions.cs</DependentUpon>
     </Compile>
+    <Compile Include="Game\GameControl\TwoPlayersGameControl\TwoPlayersGameClass.cs" />
     <Compile Include="Game\OnePlayer\OnePlayerGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +86,7 @@
     <Compile Include="PlayersNames\NewPlayerName.Designer.cs">
       <DependentUpon>NewPlayerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="PlayersNames\PlayersNamesData\NamesForPlayersClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GameOptions\GameOptions.resx">

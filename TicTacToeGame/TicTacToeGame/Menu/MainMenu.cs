@@ -41,8 +41,8 @@ namespace TicTacToeGame.Menu
                 System.Diagnostics.Process.Start("https://github.com/Enix66/TecTacToeGame");    // Nos permite hacer referencia a una página web. Inicia un proceso del sistema con una dirección web, lo cuál, se ejecutará en el navgador predeterminado.
             }
             catch   
-            { }
-        }//----------------------------------------------------------------------------------------Fin del evento
+            { }//----------------------------------------------------------------------------------Fin del Try - Catch
+        }//----------------------------------------------------------------------------------------Fin del Evento
 
         //-----------------------------------------------------------------------------------------Botón Play
         private void ButtonPlay_Click(object sender, EventArgs e)
