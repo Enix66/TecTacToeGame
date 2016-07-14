@@ -61,18 +61,12 @@
     <Compile Include="GameOptions\GameOptions.Designer.cs">
       <DependentUpon>GameOptions.cs</DependentUpon>
     </Compile>
-    <Compile Include="Game\GameControl\TwoPlayersGameControl\TwoPlayersGameClass.cs" />
-    <Compile Include="Game\OnePlayer\OnePlayerGame.cs">
+    <Compile Include="Game\GameControl\ProcessGameClass.cs" />
+    <Compile Include="Game\GraphicGameForm\GameTicTacToeGraphic.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Game\OnePlayer\OnePlayerGame.Designer.cs">
-      <DependentUpon>OnePlayerGame.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Game\TwoPlayers\TwoPlayersGame.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Game\TwoPlayers\TwoPlayersGame.Designer.cs">
-      <DependentUpon>TwoPlayersGame.cs</DependentUpon>
+    <Compile Include="Game\GraphicGameForm\GameTicTacToeGraphic.Designer.cs">
+      <DependentUpon>GameTicTacToeGraphic.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu\MainMenu.cs">
       <SubType>Form</SubType>
@@ -92,11 +86,8 @@
     <EmbeddedResource Include="GameOptions\GameOptions.resx">
       <DependentUpon>GameOptions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Game\OnePlayer\OnePlayerGame.resx">
-      <DependentUpon>OnePlayerGame.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Game\TwoPlayers\TwoPlayersGame.resx">
-      <DependentUpon>TwoPlayersGame.cs</DependentUpon>
+    <EmbeddedResource Include="Game\GraphicGameForm\GameTicTacToeGraphic.resx">
+      <DependentUpon>GameTicTacToeGraphic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu\MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>

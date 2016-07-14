@@ -250,6 +250,7 @@
             this.Name = "NewPlayerName";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New Players Name";
+            this.Load += new System.EventHandler(this.NewPlayerName_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

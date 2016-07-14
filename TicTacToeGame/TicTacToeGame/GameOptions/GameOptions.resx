@@ -121,7 +121,7 @@
   <data name="TwoPlayers.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAiCAYAAAAd6YoqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsQAAALEAGtI711AAAABmJL
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsPAAALDwGS+QOlAAAABmJL
         R0QAAAAAAAD5Q7t/AAAHdklEQVRYR+2Ye2xbVx3HPVF10tQNVAFTu0fVTkJoTPuDCTb6BzDxx5imgSaB
         BgM0Kg2BhIRgK3tIE/9MbGJdYjuvJmlCErcNa9ekKbUTvx07dhLHj3v9uH6/rt/vVxzbsWObc05O3MR2
         sqyd1CD188+59/v7ndc9v3N+x2bc4x7/JwTn5Z+u5vO1dDK5EZVIP8YyoqRe+YZJNi9xc3nvYulgkhaJ
@@ -157,7 +157,7 @@
         j4MHg/E/A0BugE6AoA0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="BotonPlay.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="OnePlayer.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAnCAYAAABNJBuZAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAC4iAAAuIgGq4t2SAAAAAWJL

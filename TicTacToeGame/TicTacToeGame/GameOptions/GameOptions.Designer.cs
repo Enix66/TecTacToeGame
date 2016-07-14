@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameOptions));
             this.TitleBackground = new System.Windows.Forms.Label();
             this.TwoPlayers = new System.Windows.Forms.Button();
-            this.BotonPlay = new System.Windows.Forms.Button();
+            this.OnePlayer = new System.Windows.Forms.Button();
             this.HomeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -66,23 +66,23 @@
             this.TwoPlayers.UseVisualStyleBackColor = false;
             this.TwoPlayers.Click += new System.EventHandler(this.TwoPlayers_Click);
             // 
-            // BotonPlay
+            // OnePlayer
             // 
-            this.BotonPlay.BackColor = System.Drawing.Color.OrangeRed;
-            this.BotonPlay.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BotonPlay.FlatAppearance.BorderSize = 0;
-            this.BotonPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BotonPlay.Font = new System.Drawing.Font("Franklin Gothic Demi", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotonPlay.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BotonPlay.Image = ((System.Drawing.Image)(resources.GetObject("BotonPlay.Image")));
-            this.BotonPlay.Location = new System.Drawing.Point(435, 73);
-            this.BotonPlay.Name = "BotonPlay";
-            this.BotonPlay.Size = new System.Drawing.Size(298, 85);
-            this.BotonPlay.TabIndex = 1016;
-            this.BotonPlay.Text = "One Player";
-            this.BotonPlay.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.BotonPlay.UseVisualStyleBackColor = false;
-            this.BotonPlay.Click += new System.EventHandler(this.BotonPlay_Click);
+            this.OnePlayer.BackColor = System.Drawing.Color.OrangeRed;
+            this.OnePlayer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.OnePlayer.FlatAppearance.BorderSize = 0;
+            this.OnePlayer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OnePlayer.Font = new System.Drawing.Font("Franklin Gothic Demi", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OnePlayer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.OnePlayer.Image = ((System.Drawing.Image)(resources.GetObject("OnePlayer.Image")));
+            this.OnePlayer.Location = new System.Drawing.Point(435, 73);
+            this.OnePlayer.Name = "OnePlayer";
+            this.OnePlayer.Size = new System.Drawing.Size(298, 85);
+            this.OnePlayer.TabIndex = 1016;
+            this.OnePlayer.Text = "One Player";
+            this.OnePlayer.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.OnePlayer.UseVisualStyleBackColor = false;
+            this.OnePlayer.Click += new System.EventHandler(this.OnePlayer_Click);
             // 
             // HomeButton
             // 
@@ -112,7 +112,7 @@
             this.ClientSize = new System.Drawing.Size(784, 462);
             this.Controls.Add(this.HomeButton);
             this.Controls.Add(this.TwoPlayers);
-            this.Controls.Add(this.BotonPlay);
+            this.Controls.Add(this.OnePlayer);
             this.Controls.Add(this.TitleBackground);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -126,7 +126,7 @@
         #endregion
 
         private System.Windows.Forms.Label TitleBackground;
-        private System.Windows.Forms.Button BotonPlay;
+        private System.Windows.Forms.Button OnePlayer;
         private System.Windows.Forms.Button TwoPlayers;
         private System.Windows.Forms.Button HomeButton;
     }
