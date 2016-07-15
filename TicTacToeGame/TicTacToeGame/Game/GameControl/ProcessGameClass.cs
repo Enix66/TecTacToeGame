@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 //-------------------------------------------------------------------------------------------------Se exportan estos paquetes con el fin de manipular objetos correspondientes a ls formularios
 using System.Drawing;                                                                           // Nos permite utilizar la función "Color"
 using System.Windows.Forms;                                                                     // En este caso nos permite utilizar los objetos "Button", para manipularlos
@@ -68,8 +69,9 @@ namespace TicTacToeGame.Game.GameControl
             else
                 if (num == 2)                                                                   // Condición que evalúa si el parámetro recibido es "2", de ser así, el jugador 2 ganó la partida y se aumentará la variable correspondiente a este jugador
                     Pl2Wins += 1;                                                               // Aumenta en 1 la variable "Pl2Wins"
-                else //----------------------------------------------------------------------------Ingresa en este caso cuando la partida ha terminado empate, recibe como parámetro el número 3
-                    DrawsGames += 1;                                                            // Aumenta en 1 la variable "DrawsGames"
+                else 
+                    if(num == 3)                                                                // Ingresa en este caso cuando la partida ha terminado empate, recibe como parámetro el número 3
+                        DrawsGames += 1;                                                        // Aumenta en 1 la variable "DrawsGames"
         }//----------------------------------------------------------------------------------------Fin del Procedimiento
 
         //-----------------------------------------------------------------------------------------Procedimiento que nos permite ingresar la jugada en la matriz como dato (1= jugador 1, 2= jugador 2)
