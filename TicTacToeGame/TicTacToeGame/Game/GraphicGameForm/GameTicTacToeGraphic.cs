@@ -165,8 +165,10 @@ namespace TicTacToeGame.Game.GraphicGameForm
                 //---------------------------------------------------------------------------------Caso 1, significa si el ganador es el "jugador 1"
                 case 1:
                     {
-                        //-------------------------------------------------------------------------Imprime un mensaje al usuario (Jugador 1), el cual, le notifica que es ganador de la partida
-                        MessageBox.Show("Congratulations, Winner: " + NamesForPlayersClass.NamePlayer1, "Player 1 Win", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        //-------------------------------------------------------------------------Imprime un mensaje al usuario (Jugador 1), el cual, le notifica que es ganador de la partida y le pregunta si desea continuar o ir al menú de opciones
+                        if (CustomMessageBox.CustomMessageBoxGraphics.Show("Congratulations,\nWinner: " + NamesForPlayersClass.NamePlayer1, "Player 1 Win", "Try Again", "Option Menu", 1) == DialogResult.No)
+                            HomeButton.PerformClick();                                          // Realiza un click al botón "HomeButton"
+
                         ProcessCall(1);                                                         // Llama al procedimiento "ProcessCall" que realizará los procesos necesarios para inicializar la partida, envía como parametro el dato "1", ya que, el ganador es el jugador 1
                     }break;                                                                     // La función "break", indica que ahí se sale del switch
                 //---------------------------------------------------------------------------------Fin del Caso
@@ -174,8 +176,10 @@ namespace TicTacToeGame.Game.GraphicGameForm
                 //---------------------------------------------------------------------------------Caso 1, significa si el ganador es el "jugador 2"
                 case 2:
                     {
-                        //-------------------------------------------------------------------------Imprime un mensaje al usuario (Jugador 2), el cual, le notifica que es ganador de la partida
-                        MessageBox.Show("Congratulations, Winner: " + NamesForPlayersClass.NamePlayer2, "Player 2 Win", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        //-------------------------------------------------------------------------Imprime un mensaje al usuario (Jugador 2), el cual, le notifica que es ganador de la partida y le pregunta si desea continuar o ir al menú de opciones
+                        if (CustomMessageBox.CustomMessageBoxGraphics.Show("Congratulations,\nWinner: " + NamesForPlayersClass.NamePlayer2, "Player 2 Win", "Try Again", "Option Menu", 1) == DialogResult.No)
+                            HomeButton.PerformClick();                                          // Realiza un click al botón "HomeButton"
+
                         ProcessCall(2);                                                         // Llama al procedimiento "ProcessCall" que realizará los procesos necesarios para inicializar la partida, envía como parametro el dato "2", ya que, el ganador es el jugador 2
                     }break;                                                                     // La función "break", indica que ahí se sale del switch
                 //---------------------------------------------------------------------------------Fin del Caso
@@ -208,8 +212,9 @@ namespace TicTacToeGame.Game.GraphicGameForm
                 Pos.Text = "O";                                                                 // Imprime en el objeto "Button" "Pos" el datos o valor "O"
             }//------------------------------------------------------------------------------------Fin de la Condición
 
-            //-------------------------------------------------------------------------------------Muestra un mensaje al usuario, el cual, le informa que el juego ha terminado empate
-            MessageBox.Show("Tied Game, Play Again", "Tied", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //-------------------------------------------------------------------------------------Muestra un mensaje al usuario, el cual, le informa que el juego ha terminado empate y le pregunta si desea continuar o ir al menú de opciones
+            if (CustomMessageBox.CustomMessageBoxGraphics.Show("Tied Game, Play Again", "Tied", "Try Again", "Option Menu",1) == DialogResult.No)
+                HomeButton.PerformClick();                                                      // Realiza un click al botón "HomeButton
 
             ProcessCall(3);                                                                     // Llama al procedimiento "ProcessCall" que realizará los procesos necesarios para inicializar la partida, envía como parametro el dato "3", ya que, la partida ha terminado empate                                                                
         }//----------------------------------------------------------------------------------------Fin del Procedimiento
@@ -220,9 +225,12 @@ namespace TicTacToeGame.Game.GraphicGameForm
             //-------------------------------------------------------------------------------------Condicional que evalúa si la jugada es la ganadora para el jugador 1
             if (PGC.PlayersWin(1) == 1)
             {
-                //---------------------------------------------------------------------------------Imprime un mensaje al usuario (Jugador 1), el cual, le notifica que es ganador de la partida
-                MessageBox.Show("Congratulations, Winner: " + NamesForPlayersClass.NamePlayer1, "Player 1 Win", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                ProcessCall(1);                                                                 // Llama al procedimiento "ProcessCall" que realizará los procesos necesarios para inicializar la partida, envía como parametro el dato "1", ya que, el ganador es el jugador 1
+                
+                //---------------------------------------------------------------------------------Imprime un mensaje al usuario (Jugador 1), el cual, le notifica que es ganador de la partida y le pregunta si desea continuar o ir al menú de opciones
+                if (CustomMessageBox.CustomMessageBoxGraphics.Show("Congratulations, \nWinner: " + NamesForPlayersClass.NamePlayer1, "Player 1 Win", "Try Again","Option Menu",1) == DialogResult.No)
+                    HomeButton.PerformClick();                                                  // Realiza un click al botón "HomeButton"
+                ProcessCall(1);                                                                 // Llama al procedimiento "ProcessCall" que realizará los procesos necesarios para inicializar la partida, envía como parámetro el dato "1", ya que, el ganador es el jugador 1
+
             }//------------------------------------------------------------------------------------Fin de Condicional
             else
             {
@@ -232,9 +240,11 @@ namespace TicTacToeGame.Game.GraphicGameForm
                 //---------------------------------------------------------------------------------Condicional que evalúa si la jugada es la ganadora para el jugador 2
                 if (PGC.PlayersWin(2) == 2)
                 {
-                    //-----------------------------------------------------------------------------Imprime un mensaje al usuario (Jugador 2), el cual, le notifica que es ganador de la partida
-                    MessageBox.Show("Congratulations, Winner: " + NamesForPlayersClass.NamePlayer2, "Player 2 Win", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    ProcessCall(2);                                                             // Llama al procedimiento "ProcessCall" que realizará los procesos necesarios para inicializar la partida, envía como parametro el dato "2", ya que, el ganador es el jugador 2
+
+                    //-----------------------------------------------------------------------------Imprime un mensaje al usuario (Jugador 2), el cual, le notifica que es ganador de la partida y le pregunta si desea continuar o ir al menú de opciones
+                    if (CustomMessageBox.CustomMessageBoxGraphics.Show("Congratulations, \nWinner: " + NamesForPlayersClass.NamePlayer2, "Player 2 Win", "Try Again", "Option Menu",1) == DialogResult.No)
+                        HomeButton.PerformClick();                                              // Realiza un click al botón "HomeButton"
+                    ProcessCall(2);                                                             // Llama al procedimiento "ProcessCall" que realizará los procesos necesarios para inicializar la partida, envía como parámetro el dato "2", ya que, el ganador es el jugador 2
                 }
                 else
                 {

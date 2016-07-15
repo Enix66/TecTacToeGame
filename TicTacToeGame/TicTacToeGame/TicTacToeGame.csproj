@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomMessageBox\CustomMessageBoxGraphics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomMessageBox\CustomMessageBoxGraphics.Designer.cs">
+      <DependentUpon>CustomMessageBoxGraphics.cs</DependentUpon>
+    </Compile>
     <Compile Include="GameOptions\GameOptions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     <Compile Include="PlayersNames\PlayersNamesData\NamesForPlayersClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CustomMessageBox\CustomMessageBoxGraphics.resx">
+      <DependentUpon>CustomMessageBoxGraphics.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GameOptions\GameOptions.resx">
       <DependentUpon>GameOptions.cs</DependentUpon>
     </EmbeddedResource>

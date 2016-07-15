@@ -16,8 +16,6 @@ namespace TicTacToeGame
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new PlayersNames.NewPlayerName());
-            // Application.Run(new Game.TwoPlayers.TwoPlayersGame());
             Application.Run(new Menu.MainMenu());
         }
     }
